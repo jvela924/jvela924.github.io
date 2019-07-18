@@ -5,6 +5,7 @@ $(()=>{
       type: "GET",
   }).then(
       (data)=>{
+          $('#firstName1').html(data.data[0].team.full_name)
           console.log(data.data[0].first_name);
       }),
       ()=>{
