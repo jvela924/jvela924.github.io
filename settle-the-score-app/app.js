@@ -23,6 +23,14 @@ $('#form1').on('submit', (event)=> {
         }).then(
           (data)=>{
             $('.player1Gp').text(data.data[0].games_played)
+            $('.player1Pts').text(data.data[0].pts)
+            $('.player1Reb').text(data.data[0].reb)
+            $('.player1Ast').text(data.data[0].ast)
+            $('.player1Fg').text(parseFloat(((data.data[0].fg_pct)*100).toFixed(2))+ "%")
+            $('.player13P').text(parseFloat(((data.data[0].fg3_pct)*100).toFixed(2))+ "%")
+            $('.player1Stl').text(data.data[0].stl)
+            $('.player1Blk').text(data.data[0].blk)
+            $('.player1Tov').text(data.data[0].turnover)
           }),
           ()=>{
               console.log('bad');
@@ -48,13 +56,22 @@ $('#form2').on('submit', (event)=> {
   }).then(
     (data)=>{
         $('.player2Name').text((data.data[0].first_name) + (data.data[0].last_name))
-        let playerID = (data.data[0].id)
-        console.log(data.data[0].first_name);
+        let playerID = (data.data[0].id);
+        $('.player2Team').html(data.data[0].team.full_name)
+        addLogo2()
         $.ajax({
-          url:"https://www.balldontlie.io/api/v1/season_averages?player_ids[]=" + playerID
+          url:'https://www.balldontlie.io/api/v1/season_averages?season=' + $season + '&player_ids[]=' + playerID
         }).then(
           (data)=>{
             $('.player2Gp').text(data.data[0].games_played)
+            $('.player2Pts').text(data.data[0].pts)
+            $('.player2Reb').text(data.data[0].reb)
+            $('.player2Ast').text(data.data[0].ast)
+            $('.player2Fg').text(parseFloat(((data.data[0].fg_pct)*100).toFixed(2))+ "%")
+            $('.player23P').text(parseFloat(((data.data[0].fg3_pct)*100).toFixed(2))+ "%")
+            $('.player2Stl').text(data.data[0].stl)
+            $('.player2Blk').text(data.data[0].blk)
+            $('.player2Tov').text(data.data[0].turnover)
           }),
           ()=>{
               console.log('bad');
@@ -71,9 +88,193 @@ let $teamLogo = ["http://content.sportslogos.net/logos/6/220/thumbs/22091682016.
 const addLogo = () => {
   let $playerTeam = $('.player1Team')
   let $logo = $('<img>')
-  if ($playerTeam.text() === "Los Angeles Lakers") {
+  $logo.addClass('logo')
+  if ($playerTeam.text() === "Atlanta Hawks") {
     $logo.attr('src', $teamLogo[0])
     $playerTeam.append($logo)
-    console.log($logo);
+  } else if ($playerTeam.text() === "Boston Celtics") {
+    $logo.attr('src', $teamLogo[1])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Brooklyn Nets") {
+    $logo.attr('src', $teamLogo[2])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Charlotte Hornets") {
+    $logo.attr('src', $teamLogo[3])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Chicago Bulls") {
+    $logo.attr('src', $teamLogo[4])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Cleveland Cavaliers") {
+    $logo.attr('src', $teamLogo[5])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Dallas Mavericks") {
+    $logo.attr('src', $teamLogo[6])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Denver Nuggets") {
+    $logo.attr('src', $teamLogo[7])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Detroit Pistons") {
+    $logo.attr('src', $teamLogo[8])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Golden State Warriors") {
+    $logo.attr('src', $teamLogo[9])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Houston Rockets") {
+    $logo.attr('src', $teamLogo[10])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Indiana Pacers") {
+    $logo.attr('src', $teamLogo[11])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Los Angeles Clippers") {
+    $logo.attr('src', $teamLogo[12])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Los Angeles Lakers") {
+    $logo.attr('src', $teamLogo[13])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Memphis Grizzlies") {
+    $logo.attr('src', $teamLogo[14])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Miami Heat") {
+    $logo.attr('src', $teamLogo[15])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Milwaukee Bucks") {
+    $logo.attr('src', $teamLogo[16])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Minnesota Timberwolves") {
+    $logo.attr('src', $teamLogo[17])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "New Orleans Pelicans") {
+    $logo.attr('src', $teamLogo[18])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "New York Knicks") {
+    $logo.attr('src', $teamLogo[19])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Oklahoma City Thunder") {
+    $logo.attr('src', $teamLogo[20])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Orlando Magic") {
+    $logo.attr('src', $teamLogo[21])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Philadelphia 76ers") {
+    $logo.attr('src', $teamLogo[22])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Phoenix Suns") {
+    $logo.attr('src', $teamLogo[23])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Portland Trail Blazers") {
+    $logo.attr('src', $teamLogo[24])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Sacramento Kings") {
+    $logo.attr('src', $teamLogo[25])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "San Antonio Spurs") {
+    $logo.attr('src', $teamLogo[26])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Toronto Raptors") {
+    $logo.attr('src', $teamLogo[27])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Utah Jazz") {
+    $logo.attr('src', $teamLogo[28])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Washington Wizards") {
+    $logo.attr('src', $teamLogo[29])
+    $playerTeam.append($logo)
+  }
+}
+
+const addLogo2 = () => {
+  let $playerTeam = $('.player2Team')
+  let $logo = $('<img>')
+  $logo.addClass('logo')
+  if ($playerTeam.text() === "Atlanta Hawks") {
+    $logo.attr('src', $teamLogo[0])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Boston Celtics") {
+    $logo.attr('src', $teamLogo[1])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Brooklyn Nets") {
+    $logo.attr('src', $teamLogo[2])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Charlotte Hornets") {
+    $logo.attr('src', $teamLogo[3])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Chicago Bulls") {
+    $logo.attr('src', $teamLogo[4])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Cleveland Cavaliers") {
+    $logo.attr('src', $teamLogo[5])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Dallas Mavericks") {
+    $logo.attr('src', $teamLogo[6])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Denver Nuggets") {
+    $logo.attr('src', $teamLogo[7])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Detroit Pistons") {
+    $logo.attr('src', $teamLogo[8])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Golden State Warriors") {
+    $logo.attr('src', $teamLogo[9])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Houston Rockets") {
+    $logo.attr('src', $teamLogo[10])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Indiana Pacers") {
+    $logo.attr('src', $teamLogo[11])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Los Angeles Clippers") {
+    $logo.attr('src', $teamLogo[12])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Los Angeles Lakers") {
+    $logo.attr('src', $teamLogo[13])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Memphis Grizzlies") {
+    $logo.attr('src', $teamLogo[14])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Miami Heat") {
+    $logo.attr('src', $teamLogo[15])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Milwaukee Bucks") {
+    $logo.attr('src', $teamLogo[16])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Minnesota Timberwolves") {
+    $logo.attr('src', $teamLogo[17])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "New Orleans Pelicans") {
+    $logo.attr('src', $teamLogo[18])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "New York Knicks") {
+    $logo.attr('src', $teamLogo[19])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Oklahoma City Thunder") {
+    $logo.attr('src', $teamLogo[20])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Orlando Magic") {
+    $logo.attr('src', $teamLogo[21])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Philadelphia 76ers") {
+    $logo.attr('src', $teamLogo[22])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Phoenix Suns") {
+    $logo.attr('src', $teamLogo[23])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Portland Trail Blazers") {
+    $logo.attr('src', $teamLogo[24])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Sacramento Kings") {
+    $logo.attr('src', $teamLogo[25])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "San Antonio Spurs") {
+    $logo.attr('src', $teamLogo[26])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Toronto Raptors") {
+    $logo.attr('src', $teamLogo[27])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Utah Jazz") {
+    $logo.attr('src', $teamLogo[28])
+    $playerTeam.append($logo)
+  } else if ($playerTeam.text() === "Washington Wizards") {
+    $logo.attr('src', $teamLogo[29])
+    $playerTeam.append($logo)
   }
 }
