@@ -278,3 +278,23 @@ const addLogo2 = () => {
     $playerTeam.append($logo)
   }
 }
+
+const $openAbout = $('#openAbout');
+const $openInstructions = $('#openInstructions')
+
+const $modalTextboxAbout = $('#modalTextboxAbout')
+const $modalTextboxInstructions = $('#modalTextboxInstructions')
+
+const $closeAbout = $('#closeAbout');
+
+const openAbout = () => {
+  $modalTextboxAbout.css('display', 'block');
+}
+
+$openAbout.on('click', openAbout);
+
+const closeAbout = () => {
+  $modalTextboxAbout.css('display', 'none');
+}
+
+$closeAbout.on('click', closeAbout);
