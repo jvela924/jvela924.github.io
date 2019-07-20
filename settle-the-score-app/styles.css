@@ -1,12 +1,7 @@
-body {
-  background-color: #E7E7E7;
-}
-
 #top {
-  display: flex;
-  justify-content: space-around;
   margin: 0 auto;
   margin-bottom: 10px;
+  background-color: #E7E7E7
 }
 
 .modal {
@@ -33,6 +28,9 @@ body {
   padding: 10px;
   font-family: 'Josefin Sans', sans-serif;
   animation: modal-pulse 1s 3;
+  position: absolute;
+  top: 25%;
+  right: 20%;
 }
 
 #modalTextboxInstructions {
@@ -47,6 +45,9 @@ body {
   padding: 10px;
   font-family: 'Josefin Sans', sans-serif;
   animation: modal-pulse 1s 3;
+  position: absolute;
+  top: 25%;
+  right: 8%;
 }
 
 #openAbout {
@@ -55,6 +56,9 @@ body {
   background-color: black;
   color: white;
   border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  right: 25%;
 }
 
 #openInstructions {
@@ -63,6 +67,9 @@ body {
   background-color: black;
   color: white;
   border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  right: 15%;
 }
 
 .about {
@@ -74,11 +81,19 @@ body {
   font-size: 50px;
   margin-top: 5px;
   font-family: 'Shrikhand';
+  position: absolute;
+  z-index: 1;
+  top: 7%;
+  left: 12%;
+  color: white;
+  text-align: center;
 }
 
 #middle {
   display: flex;
   justify-content: space-around;
+  margin-top: 250px;
+
 }
 
 #player {
@@ -168,4 +183,16 @@ button {
     box-shadow: 0 0 0 35px rgba(0,0,0,0);
     transform: scale(1.1);
   }
+}
+
+#logo {
+  width: 98%;
+  margin: 0 auto;
+  height: 200px;
+  position: relative;
+  margin-left: -5px;
+}
+
+.stat {
+  font-weight: bold;
 }
