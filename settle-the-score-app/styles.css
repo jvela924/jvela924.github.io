@@ -6,6 +6,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .modal {
@@ -16,26 +17,34 @@ body {
   border-radius: 10px;
 }
 
+#modal-footer {
+	text-align: right;
+}
+
 #modalTextboxAbout {
-	background-color: whitesmoke;
+	background-color: #FEE2E2;
 	height: 150px;
 	width: 200px;
 	border-radius: 10px;
   display: none;
-  color: red;
+  color: black;
   font-weight: bold;
   overflow: auto;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #modalTextboxInstructions {
-	background-color: whiteSmoke;
+	background-color: #FEE2E2;
 	height: 150px;
 	width: 200px;
 	border-radius: 10px;
   display: none;
-  color: red;
+  color: black;
   font-weight: bold;
   overflow: auto;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #openAbout {
@@ -60,4 +69,83 @@ body {
 
 #title {
   margin-left: 0;
+  font-size: 50px;
+  margin-top: 5px;
+  font-family: 'Shrikhand';
+}
+
+#middle {
+  display: flex;
+  justify-content: space-around;
+}
+
+#player {
+  font-size: 20px;
+  font-family: 'Arsenal', sans-serif;
+}
+
+input {
+  font-size: 13px;
+  width: 150px;
+}
+
+.playerContainer {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0 30px;
+}
+
+#leftStatsContainer {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#rightStatsContainer {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 20px;
+}
+
+.player1Name {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 50px;
+}
+
+.player2Name {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 50px;
+}
+
+img {
+  padding-left: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.vs {
+  font-size: 50px;
+  font-family: 'Bungee Inline', cursive;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid purple;
+  font-size: 20px;
+  margin: 0 auto;
 }

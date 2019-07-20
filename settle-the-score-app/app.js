@@ -55,7 +55,7 @@ $('#form2').on('submit', (event)=> {
     url:"https://www.balldontlie.io/api/v1/players?search=" + $userInput
   }).then(
     (data)=>{
-        $('.player2Name').text((data.data[0].first_name) + (data.data[0].last_name))
+        $('.player2Name').text((data.data[0].first_name) + " " + (data.data[0].last_name))
         let playerID = (data.data[0].id);
         $('.player2Team').html(data.data[0].team.full_name)
         addLogo2()
@@ -286,6 +286,7 @@ const $modalTextboxAbout = $('#modalTextboxAbout')
 const $modalTextboxInstructions = $('#modalTextboxInstructions')
 
 const $closeAbout = $('#closeAbout');
+const $closeInstructions = $('#closeInstructions');
 
 const openAbout = () => {
   $modalTextboxAbout.css('display', 'block');
@@ -298,3 +299,19 @@ const closeAbout = () => {
 }
 
 $closeAbout.on('click', closeAbout);
+
+const openInstructions = () => {
+  $modalTextboxInstructions.css('display', 'block');
+}
+
+$openInstructions.on('click', openInstructions);
+
+const closeInstructions = () => {
+  $modalTextboxInstructions.css('display', 'none');
+}
+
+$closeInstructions.on('click', closeInstructions);
+
+const reset = () => {
+  $('input').reset()
+}

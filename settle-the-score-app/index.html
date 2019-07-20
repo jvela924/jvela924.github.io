@@ -3,32 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Settle The Score</title>
+    <link href="https://fonts.googleapis.com/css?family=Arsenal|Bungee+Inline|Josefin+Sans|Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div id="top">
-      <div id="title">
-        <h1>Settle The Score</h1>
+      <div>
+        <h1 id="title">Settle The Score</h1>
       </div>
       <div class="modal">
         <div class="about">
-          <button id="openAbout">About the Game</button>
+          <button id="openAbout">About the App</button>
           <div id="modalTextboxAbout">
-            <a id="closeAbout" href="#">Close</a>
-            <p>This app does xyz</p>
+            <p>Easily get season averages for your favorite NBA players and Settle the Score to see whose stats are better.</p>
+            <div id="modal-footer">
+              <a id="closeAbout" href="#">Close</a>
+            </div>
           </div>
         </div>
         <div class="instructions">
           <button id="openInstructions">Instructions</button>
           <div id="modalTextboxInstructions">
-            <a id="closeInstructions" href="#">Close</a>
-            <p>app instructions</p>
+            <p>Search for a player by their full name and enter the season (by start year) for which you want to see their average stats.</p>
+            <div id="modal-footer">
+              <a id="closeInstructions" href="#">Close</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div id="middle">
-      <div id="leftPlayerContainer">
+      <div class="playerContainer">
         <h1 id="player">Select the Player and Season</h1>
         <form id="form1">
         	<input id="player1" type="text" placeholder="Enter player's full name"/>
@@ -81,13 +86,14 @@
         <button id="reset" type="button" name="button">Reset</button>
         <h3 class="vs">VS</h3>
       </div>
-      <div id="rightPlayerContainer">
+      <div class="playerContainer">
+        <h1 id="player">Select the Player and Season</h1>
         <form id="form2">
         	<input id="player2" type="text" placeholder="Enter player's full name"/>
           <input id="season2" type="text" placeholder="Enter the season"/>
           <input type="submit">
         </form>
-        <h2 class="player2Name">Test</h2>
+        <h2 class="player2Name"></h2>
         <h3 class="player2Team"></h3>
         <h4>Statistics</h4>
         <div id="rightStatsContainer">
