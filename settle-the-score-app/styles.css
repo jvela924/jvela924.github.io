@@ -143,6 +143,13 @@ img {
   padding-top: 50px;
 }
 
+.submit {
+  border-radius: 10px;
+  border: 1px solid blue;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
 button {
   border-radius: 10px;
   border: 1px solid purple;

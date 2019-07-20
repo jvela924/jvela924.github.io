@@ -312,6 +312,6 @@ const closeInstructions = () => {
 
 $closeInstructions.on('click', closeInstructions);
 
-const reset = () => {
-  $('input').reset()
-}
+$('#reset').on('click', event => {
+  location.reload()
+})
