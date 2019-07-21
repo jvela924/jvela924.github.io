@@ -1,6 +1,7 @@
 #top {
   margin: 0 auto;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .modal {
@@ -28,8 +29,8 @@
   font-family: 'Josefin Sans', sans-serif;
   animation: modal-pulse 1s 3;
   position: absolute;
-  top: 21%;
-  right: 18%;
+  top: 22%;
+  right: 14%;
 }
 
 #modalTextboxInstructions {
@@ -45,8 +46,8 @@
   font-family: 'Josefin Sans', sans-serif;
   animation: modal-pulse 1s 3;
   position: absolute;
-  top: 21%;
-  right: 3%;
+  top: 22%;
+  right: 1%;
 }
 
 #openAbout {
@@ -57,7 +58,7 @@
   border-radius: 10px;
   position: absolute;
   top: 10%;
-  right: 23%;
+  right: 19%;
 }
 
 #openInstructions {
@@ -68,7 +69,7 @@
   border-radius: 10px;
   position: absolute;
   top: 10%;
-  right: 10%;
+  right: 6%;
 }
 
 .about {
@@ -83,7 +84,7 @@
   position: absolute;
   z-index: 1;
   top: 6%;
-  left: 10%;
+  left: 12%;
   color: white;
   text-align: center;
 }
@@ -93,8 +94,11 @@
   justify-content: space-around;
   margin: 0 auto;
   padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #F4F5F5;
-  width: 98%;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid teal;
 }
 
 #player {
@@ -103,8 +107,9 @@
 }
 
 input {
-  font-size: 13px;
+  font-size: 12px;
   width: 150px;
+  font-weight: bold;
 }
 
 .playerContainer {
@@ -153,10 +158,18 @@ h4 {
   font-size: 50px;
 }
 
+
 img {
-  padding-left: 20px;
   width: 50px;
   height: 50px;
+}
+
+#logo {
+  width: 110%;
+  height: 200px;
+  position: relative;
+  display: block;
+  margin-left: -10px;
 }
 
 .vs {
@@ -192,14 +205,6 @@ button {
   }
 }
 
-#logo {
-  width: 98%;
-  margin: 0 auto;
-  height: 200px;
-  position: relative;
-  margin-left: -5px;
-}
-
 .stat {
   font-weight: bold;
 }
@@ -209,6 +214,7 @@ button {
   display: flex;
   justify-content: space-around;
 }
+
 .carousel-gifs {
   width: 80%;
   background: white
@@ -216,13 +222,16 @@ button {
   border-radius: 10px;
   box-sizing: border-box;
 }
+
 .carousel-gifs img {
-  width: 80%;
+  width: 90%;
   border-radius: 15px;
   display: none;
-  height: 75%;
-  margin-left: 50px;
+  height: 90%;
+  margin-left: 30px;
+
 }
+
 .carousel-gifs img:first-of-type {
   display: block;
 }
@@ -254,16 +263,16 @@ button {
 }
 
 #credit {
-  width: 100%;
+  width: 110%;
   display: flex;
   justify-content: space-between;
-  background-color: #929292;
+  background-color: black;
   color: white;
-  width: 98%;
-  margin: 0 auto;
+  margin: 0;
   margin-top: 50px;
-  padding-left: 10px;
   font-size: 20px;
+  padding-left: 10px;
+  margin-left: -10px;
 }
 
 a {
