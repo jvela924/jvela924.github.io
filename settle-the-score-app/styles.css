@@ -28,7 +28,7 @@
   font-family: 'Josefin Sans', sans-serif;
   animation: modal-pulse 1s 3;
   position: absolute;
-  top: 18%;
+  top: 23%;
   right: 18%;
 }
 
@@ -45,7 +45,7 @@
   font-family: 'Josefin Sans', sans-serif;
   animation: modal-pulse 1s 3;
   position: absolute;
-  top: 18%;
+  top: 23%;
   right: 3%;
 }
 
@@ -92,9 +92,8 @@
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  margin-top: 60px;
+  padding-top: 100px;
   background-color: #F4F5F5;
-  padding-top: 40px;
   width: 98%;
 }
 
@@ -128,6 +127,10 @@ input {
   font-size: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+.teamLogos {
+  padding-left: 50px;
 }
 
 h3 {
@@ -207,35 +210,62 @@ button {
   justify-content: space-around;
 }
 .carousel-gifs {
-  width: 60%;
+  width: 80%;
   background: white
   padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
 }
-.carousel-images img {
-  width: 100%;
-  border-radius: 5px;
+.carousel-gifs img {
+  width: 80%;
+  border-radius: 15px;
   display: none;
+  height: 75%;
+  margin-left: 50px;
 }
-.carousel-images img:first-of-type {
+.carousel-gifs img:first-of-type {
   display: block;
 }
 
 .carousel-button {
   align-self: center;
-  background: white;
-  color: #888;
   padding: 10px;
-  border-radius: 50%;
   text-align: center;
+  width: 10%;
+  margin-top: 30px;
 }
 .carousel-button:hover {
   cursor: pointer;
-  background: white;
   color: white;
 }
 
 #bottom {
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bottomContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 75px;
+}
+
+#credit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #929292;
+  color: white;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+a {
+  padding-right: 20px;
 }

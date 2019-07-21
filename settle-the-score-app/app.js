@@ -88,7 +88,7 @@ let $teamLogo = ["http://content.sportslogos.net/logos/6/220/thumbs/22091682016.
 const addLogo = () => {
   let $playerTeam = $('.player1Team')
   let $logo = $('<img>')
-  $logo.addClass('logo')
+  $logo.addClass('teamLogos')
   if ($playerTeam.text() === "Atlanta Hawks") {
     $logo.attr('src', $teamLogo[0])
     $playerTeam.append($logo)
@@ -185,7 +185,7 @@ const addLogo = () => {
 const addLogo2 = () => {
   let $playerTeam = $('.player2Team')
   let $logo = $('<img>')
-  $logo.addClass('logo')
+  $logo.addClass('teamLogos')
   if ($playerTeam.text() === "Atlanta Hawks") {
     $logo.attr('src', $teamLogo[0])
     $playerTeam.append($logo)
@@ -316,9 +316,9 @@ $('#reset').on('click', event => {
   location.reload()
 })
 
-let currentImgIndex = 0
+let currentGifIndex = 0
 
-let $currentImg = $('.carousel-gifs').children().eq(currentImgIndex)
+let $currentGif = $('.carousel-gifs').children().eq(currentGifIndex)
 
 let numOfGifs = $('.carousel-gifs').children().length - 1
 
@@ -330,9 +330,9 @@ $next.on('click', () => {
     if(currentGifIndex < numOfGifs) {
       currentGifIndex++
     } else {
-      currentImgIndex = 0
+      currentGifIndex = 0
     }
-    $currentGif = $('.carousel-images').children().eq(currentGifIndex)
+    $currentGif = $('.carousel-gifs').children().eq(currentGifIndex)
     $currentGif.show()
   })
 
@@ -343,6 +343,6 @@ $previous.on('click', () => {
   } else {
     currentGifIndex = numOfGifs
   }
-  $currentGif = $('.carousel-images').children().eq(currentGifIndex)
+  $currentGif = $('.carousel-gifs').children().eq(currentGifIndex)
   $currentGif.show()
 })
