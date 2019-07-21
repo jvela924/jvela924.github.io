@@ -16,40 +16,6 @@
 	text-align: right;
 }
 
-#modalTextboxAbout {
-	background-color: #FEE2E2;
-	height: 150px;
-	width: 200px;
-	border-radius: 10px;
-  display: none;
-  color: black;
-  font-weight: bold;
-  overflow: auto;
-  padding: 10px;
-  font-family: 'Josefin Sans', sans-serif;
-  animation: modal-pulse 1s 3;
-  position: absolute;
-  top: 22%;
-  right: 14%;
-}
-
-#modalTextboxInstructions {
-	background-color: #FEE2E2;
-	height: 150px;
-	width: 200px;
-	border-radius: 10px;
-  display: none;
-  color: black;
-  font-weight: bold;
-  overflow: auto;
-  padding: 10px;
-  font-family: 'Josefin Sans', sans-serif;
-  animation: modal-pulse 1s 3;
-  position: absolute;
-  top: 22%;
-  right: 1%;
-}
-
 #openAbout {
   margin-top: 27px;
   font-size: 20px;
@@ -72,6 +38,40 @@
   right: 6%;
 }
 
+#modalTextboxAbout {
+	background-color: #FEE2E2;
+	height: 150px;
+	width: 200px;
+	border-radius: 10px;
+  display: none;
+  color: black;
+  font-weight: bold;
+  overflow: auto;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  animation: modal-pulse 1s 3;
+  position: absolute;
+  top: 19%;
+  right: 16%;
+}
+
+#modalTextboxInstructions {
+	background-color: #FEE2E2;
+	height: 150px;
+	width: 200px;
+	border-radius: 10px;
+  display: none;
+  color: black;
+  font-weight: bold;
+  overflow: auto;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  animation: modal-pulse 1s 3;
+  position: absolute;
+  top: 19%;
+  right: 2%;
+}
+
 .about {
   padding-right: 20px;
 }
@@ -83,7 +83,7 @@
   font-family: 'Shrikhand';
   position: absolute;
   z-index: 1;
-  top: 6%;
+  top: 5%;
   left: 12%;
   color: white;
   text-align: center;
@@ -275,6 +275,66 @@ button {
   margin-left: -10px;
 }
 
-a {
+.creditLink {
   padding-right: 20px;
+  color: white;
 }
+
+/* Adding Media query for mobile devices */
+@media only screen and (max-width: 1000px) and (min-width:500px) {
+  #openAbout {
+    top: 1%;
+    right: 10%;
+  }
+
+  #openInstructions {
+    top: 20%;
+    right: 11%;
+  }
+
+  #modalTextboxAbout {
+    width: 250px;
+    height: 80px;
+    font-size: 12px;
+    padding: 5px;
+    top: 10%;
+    right: 4%;
+  }
+
+  #modalTextboxInstructions {
+    width: 250px;
+    height: 80px;
+    font-size: 12px;
+    padding: 5px;
+    top: 27%;
+    right: 4%;
+  }
+
+  #logo {
+    height: 300px;
+  }
+
+  #title {
+    font-size: 50px;
+    left: 4%;
+    top: 12%;
+  }
+
+  #middle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #vs {
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+}
+
+/* 
+@media only screen and (max-width: 500px) {
+  html {
+    display: none;
+  }
+} */
