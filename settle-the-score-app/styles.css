@@ -1,7 +1,6 @@
 #top {
   margin: 0 auto;
   margin-bottom: 10px;
-  background-color: #E7E7E7
 }
 
 .modal {
@@ -29,8 +28,8 @@
   font-family: 'Josefin Sans', sans-serif;
   animation: modal-pulse 1s 3;
   position: absolute;
-  top: 25%;
-  right: 20%;
+  top: 18%;
+  right: 18%;
 }
 
 #modalTextboxInstructions {
@@ -46,8 +45,8 @@
   font-family: 'Josefin Sans', sans-serif;
   animation: modal-pulse 1s 3;
   position: absolute;
-  top: 25%;
-  right: 8%;
+  top: 18%;
+  right: 3%;
 }
 
 #openAbout {
@@ -58,7 +57,7 @@
   border-radius: 10px;
   position: absolute;
   top: 10%;
-  right: 25%;
+  right: 23%;
 }
 
 #openInstructions {
@@ -69,7 +68,7 @@
   border-radius: 10px;
   position: absolute;
   top: 10%;
-  right: 15%;
+  right: 10%;
 }
 
 .about {
@@ -83,8 +82,8 @@
   font-family: 'Shrikhand';
   position: absolute;
   z-index: 1;
-  top: 7%;
-  left: 12%;
+  top: 6%;
+  left: 10%;
   color: white;
   text-align: center;
 }
@@ -92,8 +91,11 @@
 #middle {
   display: flex;
   justify-content: space-around;
-  margin-top: 250px;
-
+  margin: 0 auto;
+  margin-top: 60px;
+  background-color: #F4F5F5;
+  padding-top: 40px;
+  width: 98%;
 }
 
 #player {
@@ -108,9 +110,10 @@ input {
 
 .playerContainer {
   border-radius: 10px;
-  border: 1px solid black;
+  border: 3px solid black;
   padding: 10px;
   margin: 0 30px;
+  background: white;
 }
 
 #leftStatsContainer {
@@ -172,6 +175,7 @@ button {
   border: 1px solid purple;
   font-size: 20px;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 @keyframes modal-pulse {
@@ -195,4 +199,43 @@ button {
 
 .stat {
   font-weight: bold;
+}
+
+.carousel-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.carousel-gifs {
+  width: 60%;
+  background: white
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.carousel-images img {
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+.carousel-images img:first-of-type {
+  display: block;
+}
+
+.carousel-button {
+  align-self: center;
+  background: white;
+  color: #888;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+.carousel-button:hover {
+  cursor: pointer;
+  background: white;
+  color: white;
+}
+
+#bottom {
+  height: 500px;
 }

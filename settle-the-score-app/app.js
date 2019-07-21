@@ -315,3 +315,34 @@ $closeInstructions.on('click', closeInstructions);
 $('#reset').on('click', event => {
   location.reload()
 })
+
+let currentImgIndex = 0
+
+let $currentImg = $('.carousel-gifs').children().eq(currentImgIndex)
+
+let numOfGifs = $('.carousel-gifs').children().length - 1
+
+const $next = $('.next')
+const $previous = $('.previous')
+
+$next.on('click', () => {
+    $currentGif.hide()
+    if(currentGifIndex < numOfGifs) {
+      currentGifIndex++
+    } else {
+      currentImgIndex = 0
+    }
+    $currentGif = $('.carousel-images').children().eq(currentGifIndex)
+    $currentGif.show()
+  })
+
+$previous.on('click', () => {
+  $currentGif.hide()
+  if (currentGifIndex > 0) {
+    currentGifIndex--
+  } else {
+    currentGifIndex = numOfGifs
+  }
+  $currentGif = $('.carousel-images').children().eq(currentGifIndex)
+  $currentGif.show()
+})
