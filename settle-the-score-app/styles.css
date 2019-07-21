@@ -23,7 +23,7 @@
   color: white;
   border-radius: 10px;
   position: absolute;
-  top: 10%;
+  top: 3%;
   right: 19%;
 }
 
@@ -34,13 +34,13 @@
   color: white;
   border-radius: 10px;
   position: absolute;
-  top: 10%;
+  top: 3%;
   right: 6%;
 }
 
 #modalTextboxAbout {
 	background-color: #FEE2E2;
-	height: 150px;
+	height: 125px;
 	width: 200px;
 	border-radius: 10px;
   display: none;
@@ -51,13 +51,13 @@
   font-family: 'Josefin Sans', sans-serif;
   animation: modal-pulse 1s 3;
   position: absolute;
-  top: 19%;
+  top: 12%;
   right: 16%;
 }
 
 #modalTextboxInstructions {
 	background-color: #FEE2E2;
-	height: 150px;
+	height: 125px;
 	width: 200px;
 	border-radius: 10px;
   display: none;
@@ -68,7 +68,7 @@
   font-family: 'Josefin Sans', sans-serif;
   animation: modal-pulse 1s 3;
   position: absolute;
-  top: 19%;
+  top: 12%;
   right: 2%;
 }
 
@@ -281,7 +281,6 @@ button {
   color: white;
 }
 
-/* Adding Media query for mobile devices */
 @media only screen and (max-width: 1000px) and (min-width:500px) {
   #openAbout {
     top: 1%;
@@ -289,26 +288,26 @@ button {
   }
 
   #openInstructions {
-    top: 9%;
+    top: 20%;
     right: 11%;
   }
 
   #modalTextboxAbout {
-    width: 300px;
+    width: 200px;
     height: 75px;
     font-size: 12px;
     padding: 5px;
-    top: 4%;
-    right: 1%;
+    top: 9%;
+    right: 5%;
   }
 
   #modalTextboxInstructions {
-    width: 300px;
-    height: 70px;
+    width: 200px;
+    height: 85px;
     font-size: 12px;
     padding: 5px;
-    top: 13%;
-    right: 1%;
+    top: 28%;
+    right: 5%;
   }
 
   #logo {
@@ -318,7 +317,7 @@ button {
   #title {
     font-size: 45px;
     left: 7%;
-    top: 5%;
+    top: 10%;
   }
 
   #middle {
@@ -337,31 +336,31 @@ button {
 @media only screen and (max-width: 480px) and (min-width: 0) {
   #openAbout {
     top: 1%;
-    right: 10%;
+    right: 5%;
     font-size: 15px;
   }
 
   #openInstructions {
-    top: 30%;
-    right: 11%;
+    top: 25%;
+    right: 5%;
     font-size: 15px;
   }
 
   #modalTextboxAbout {
-    width: 250px;
-    height: 80px;
+    width: 100px;
+    height: 120px;
     font-size: 12px;
     padding: 5px;
-    top: 12%;
-    right: 4%;
+    top: 9%;
+    right: 5%;
   }
 
   #modalTextboxInstructions {
-    width: 250px;
-    height: 80px;
+    width: 100px;
+    height: 120px;
     font-size: 12px;
     padding: 5px;
-    top: 40%;
+    top: 33%;
     right: 4%;
   }
 
@@ -430,7 +429,7 @@ button {
 
   #title {
     font-size: 25px;
-    top: 20%;
+    top: 15%;
     left: 4%;
   }
 }

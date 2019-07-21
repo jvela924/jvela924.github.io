@@ -3,18 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Settle The Score</title>
-    <!-- Adding fonts -->
     <link href="https://fonts.googleapis.com/css?family=Arsenal|Bungee+Inline|Josefin+Sans|Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div id="top">
-      <!-- Adding banner logo -->
       <img id="logo" src="https://wallpapertag.com/wallpaper/full/4/9/6/534335-vertical-nba-logo-wallpaper-1920x1200.jpg" alt="logo">
       <div>
         <h1 id="title">Settle The<br>Score</h1>
       </div>
-      <!-- Adding modal -->
       <div class="modal">
         <div class="about">
           <button id="openAbout">About the App</button>
@@ -37,10 +34,8 @@
       </div>
     </div>
     <div id="middle">
-      <!-- Player container for left player card -->
       <div class="playerContainer">
         <h1 id="player">Select the Player and Season</h1>
-        <!-- First form for left player card -->
         <form id="form1">
         	<input id="player1" type="text" placeholder="Enter player's full name"/>
           <input id="season1" type="text" placeholder="Enter the season"/>
@@ -49,7 +44,6 @@
         <h2 class="player1Name"></h2>
         <h3 class="player1Team"></h3>
         <h4>Statistics</h4>
-        <!-- Stats will be pulled in from api using js and JQuery -->
         <div id="leftStatsContainer">
           <div class="row">
             <p class="stat">GP</p>
@@ -95,7 +89,6 @@
       </div>
       <div class="playerContainer">
         <h1 id="player">Select the Player and Season</h1>
-        <!-- Form for right player card -->
         <form id="form2">
         	<input id="player2" type="text" placeholder="Enter player's full name"/>
           <input id="season2" type="text" placeholder="Enter the season"/>
@@ -146,12 +139,10 @@
     </div>
     <div id="bottom">
       <div id="bottomContainer"
-        <!-- Adding gif carousel -->
         <div id="carouselContainer">
           <div class="carousel-button previous">
             <img src="https://png.pngtree.com/svg/20170522/1c7db84d9c.svg" alt="previous">
           </div>
-          <!-- Carousel gifs pulled from google --->
           <div class="carousel-gifs">
             <img src="https://media1.giphy.com/media/26vUGuV1WxhbkEKZy/giphy.gif?cid=790b76115d33b59e726653334dcf0fb3&rid=giphy.gif" alt="Lebron Dunking">
             <img src="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/warriors/images/67-court-12.gif" alt="Curry">
@@ -166,7 +157,6 @@
       </div>
       <div id="credit">
         <div>
-          <!-- Credits for api and team logos -->
           <p>Credits: Stats -
             <a class='creditLink' href="https://www.balldontlie.io/#introduction" target="blank">balldontlie API</a>
               Logos -
