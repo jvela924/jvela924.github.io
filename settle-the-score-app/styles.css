@@ -288,26 +288,26 @@ button {
   }
 
   #openInstructions {
-    top: 20%;
+    top: 9%;
     right: 11%;
   }
 
   #modalTextboxAbout {
-    width: 250px;
-    height: 80px;
+    width: 300px;
+    height: 75px;
     font-size: 12px;
     padding: 5px;
-    top: 10%;
-    right: 4%;
+    top: 4%;
+    right: 1%;
   }
 
   #modalTextboxInstructions {
-    width: 250px;
-    height: 80px;
+    width: 300px;
+    height: 70px;
     font-size: 12px;
     padding: 5px;
-    top: 27%;
-    right: 4%;
+    top: 13%;
+    right: 1%;
   }
 
   #logo {
@@ -315,9 +315,9 @@ button {
   }
 
   #title {
-    font-size: 50px;
-    left: 4%;
-    top: 12%;
+    font-size: 45px;
+    left: 7%;
+    top: 5%;
   }
 
   #middle {
@@ -332,9 +332,104 @@ button {
   }
 }
 
-/* 
-@media only screen and (max-width: 500px) {
-  html {
-    display: none;
+/* Adding Media query for iphones */
+@media only screen and (max-width: 480px) and (min-width: 0) {
+  #openAbout {
+    top: 1%;
+    right: 10%;
+    font-size: 15px;
   }
-} */
+
+  #openInstructions {
+    top: 30%;
+    right: 11%;
+    font-size: 15px;
+  }
+
+  #modalTextboxAbout {
+    width: 250px;
+    height: 80px;
+    font-size: 12px;
+    padding: 5px;
+    top: 12%;
+    right: 4%;
+  }
+
+  #modalTextboxInstructions {
+    width: 250px;
+    height: 80px;
+    font-size: 12px;
+    padding: 5px;
+    top: 40%;
+    right: 4%;
+  }
+
+  #logo {
+    height: 300px;
+  }
+
+  #middle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #vs {
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  input {
+    font-size: 18px;
+    width: 250px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  #middle {
+    margin: 0 auto;
+    width: 105%;
+  }
+
+  #leftStatsContainer {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #rightStatsContainer {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .teamLogos {
+    padding-left: 15px;
+  }
+
+  #credit {
+    font-size: 13px;
+    padding-left: 10px;
+    margin-left: -10px;
+  }
+
+  #bottom {
+    margin-bottom: 200px;
+    padding-bottom: 0px;
+    height: 300px;
+  }
+
+  #title {
+    font-size: 25px;
+    top: 20%;
+    left: 4%;
+  }
+}
