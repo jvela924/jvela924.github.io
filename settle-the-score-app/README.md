@@ -37,7 +37,9 @@ I struggled a little bit with responsive design since I designed for desktop fir
 
 ## Unsolved Problems
 One unsolved problem was searching for players with the same name. To get the player id, I'm initially querying on a non-unique property (player name) and not the unique property (player id). A potential solution could be to display all players with that name and their team and then have the user select who they want, but two players with the same name might  also share a team. Based on my NBA knowledge, I know a lot of the top players don't share a name with other players, so I did not think it would be a valuable use of my time for now to solve this issue. 
+
 Another unsolved problem (but not really the current intention of the site) is to add a comparison tool. I would need to create a weighted rating scale, based on the stats, and then compare each player. However, when comparing athletes, it is hard to truly say who is "better". There are a lot of factors that come into play, but this app just provides the stats for a fun debate.
+
 Also, I could have wrote more DRY JS code. However, since I was doing two separate Ajax calls, I felt it was simpler as the author to separate them into their own functions. The code was similar, but variable names were changed and the output was different for both calls.
 
 ## Future Extensions
