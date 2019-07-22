@@ -22,7 +22,17 @@ Based on the wireframe, I started with my HTML file. I created all of my contain
 After doing some research, I found a public API (on reddit) to use to get the data I needed for my site. [balldontlie](https://www.balldontlie.io/#introduction) seemed fairly easy to use and had some simple documentation. 
 
 #### JS and JQuery
-I started with building my ajax call to make sure I could retrieve data from the API before moving forward. Using JS, I was able to get the data I needed and log it to the console. Then, I used JQeury to place that data onto the page. Once I had the basic call structure down, I was ready to move on and build the more complex JS and JQeury functionality/
+I started with building my ajax call to make sure I could retrieve data from the API before moving forward. Using JS, I was able to get the data I needed and log it to the console. Then, I used JQeury to place that data onto the page. Once I had the basic call structure down, I was ready to move on and build the more complex JS and JQeury functionality.
+I knew that I would need to customize the ajax url based on user input, so I referred to what we had done in class. I was easily able to customize the url based on whatever value someone entered into the input boxes.
 
+#### Building the site
+Using my HTML, CSS, and JS files in tandem, I was able to where all my data needed to fit and started adding some styling to it. A lot of it was trial and error, but early on in the process I was able to get a functioning website that looked close to the wireframe. I then added in some more complex UI elements like the modals and gif carousel. 
 
+#### Responsive design
+I struggled a little bit with responsive design since I designed for desktop first, but I ultimately used two different media queries to make the page responsive for mobile devices and smaller sized windows. Again, a lot of this was trial and error.
 
+## Live Site
+[Settle The Score](https://jvela924.github.io/settle-the-score-app/)
+
+## Unsolved Problems
+One problem I didn't solve was searching for players with the same name. To get the player id, I'm initially querying on a non-unique property (player name) and not the unique property (player id). A potential solution could be to display all players with that name and their team and then have the user select who they want, but two players with the same name might  also share a team. Based on my NBA knowledge, I know a lot of the top players don't share a name with other players, so I did not think it would be a valuable use of my time for now to solve this issue. 
