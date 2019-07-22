@@ -10,5 +10,5 @@ JavaScript (JS) is a programming language that allows you to implement complex t
 #### JQuery
 JQuery is a JS library that makes running JS on your web page easier. You can use JQuery methods to complete complex JS functions in a single line of code.
 ## The Approach
-### Wirefram
+### Wireframe
 
