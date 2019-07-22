@@ -5,12 +5,14 @@ $('#form1').on('submit', (event)=> {
   console.log($userInput);
   // Determine season //
   let $season = $('#season1')
+  // Default season is 2018. else use vaklue that user inputs
   if ($season.val()==="") {
     $season=2018
   } else {
     $season = $season.val()
   }
   $.ajax({
+    // Custom url based on user input
     url:'https://www.balldontlie.io/api/v1/players?search=' + $userInput
   }).then(
     (data)=>{
@@ -26,7 +28,7 @@ $('#form1').on('submit', (event)=> {
           url:'https://www.balldontlie.io/api/v1/season_averages?season=' + $season + '&player_ids[]=' + playerID
         }).then(
           (data)=>{
-            // All stats I'm pulling in //
+            // All stats I'm pulling in from api //
             $('.player1Gp').text(data.data[0].games_played)
             $('.player1Pts').text(data.data[0].pts)
             $('.player1Reb').text(data.data[0].reb)
@@ -53,6 +55,7 @@ $('#form2').on('submit', (event)=> {
   let $userInput = $('#player2').val();
   console.log($userInput);
   let $season = $('#season2')
+  // Default season is 2018. else use vaklue that user inputs
   if ($season.val()==="") {
     $season=2018
   } else {
@@ -67,9 +70,11 @@ $('#form2').on('submit', (event)=> {
         $('.player2Team').html(data.data[0].team.full_name)
         addLogo2()
         $.ajax({
+          // Custom URL based on user input
           url:'https://www.balldontlie.io/api/v1/season_averages?season=' + $season + '&player_ids[]=' + playerID
         }).then(
           (data)=>{
+            // retrieve certain stst data from API
             $('.player2Gp').text(data.data[0].games_played)
             $('.player2Pts').text(data.data[0].pts)
             $('.player2Reb').text(data.data[0].reb)
@@ -195,6 +200,7 @@ const addLogo2 = () => {
   let $playerTeam = $('.player2Team')
   let $logo = $('<img>')
   $logo.addClass('teamLogos')
+  // logic for adding logo based on team name retrieved from API
   if ($playerTeam.text() === "Atlanta Hawks") {
     $logo.attr('src', $teamLogo[0])
     $playerTeam.append($logo)
@@ -289,6 +295,7 @@ const addLogo2 = () => {
 }
 
 // Modal construction //
+// Define const values
 const $openAbout = $('#openAbout');
 const $openInstructions = $('#openInstructions')
 
@@ -298,28 +305,36 @@ const $modalTextboxInstructions = $('#modalTextboxInstructions')
 const $closeAbout = $('#closeAbout');
 const $closeInstructions = $('#closeInstructions');
 
+// Define open function
 const openAbout = () => {
   $modalTextboxAbout.css('display', 'block');
 }
 
+// Click event to open about modal
 $openAbout.on('click', openAbout);
 
+// Function to close about modal
 const closeAbout = () => {
   $modalTextboxAbout.css('display', 'none');
 }
 
+// Click event to close about modal
 $closeAbout.on('click', closeAbout);
 
+// Function to open instructions modal
 const openInstructions = () => {
   $modalTextboxInstructions.css('display', 'block');
 }
 
+// Click event to open instructions modal
 $openInstructions.on('click', openInstructions);
 
+// Function to close instructions modal
 const closeInstructions = () => {
   $modalTextboxInstructions.css('display', 'none');
 }
 
+// Click event to cllse instructions modal
 $closeInstructions.on('click', closeInstructions);
 
 // Reset button functionality //

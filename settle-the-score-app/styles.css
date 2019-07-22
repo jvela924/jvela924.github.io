@@ -1,3 +1,4 @@
+/* CSS for top container */
 #top {
   margin: 0 auto;
   margin-bottom: 10px;
@@ -89,6 +90,27 @@
   text-align: center;
 }
 
+#logo {
+  width: 110%;
+  height: 200px;
+  position: relative;
+  display: block;
+  margin-left: -10px;
+}
+
+/* pulse animation for modal textboxes */
+@keyframes modal-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0,0,0,0.2);
+  }
+  100% {
+    margin-top: 10px;
+    box-shadow: 0 0 0 35px rgba(0,0,0,0);
+    transform: scale(1.1);
+  }
+}
+
+/* CSS for middle container */
 #middle {
   display: flex;
   justify-content: space-around;
@@ -138,16 +160,6 @@ input {
   padding-left: 50px;
 }
 
-h3 {
-  font-family: 'Arsenal', sans-serif;
-  font-size: 30px;
-}
-
-h4 {
-  font-family: 'Arsenal', sans-serif;
-  font-size: 20px;
-}
-
 .player1Name {
   font-family: 'Arsenal', sans-serif;
   font-size: 50px;
@@ -158,25 +170,19 @@ h4 {
   font-size: 50px;
 }
 
+h3 {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 20px;
+}
 
 img {
   width: 50px;
   height: 50px;
-}
-
-#logo {
-  width: 110%;
-  height: 200px;
-  position: relative;
-  display: block;
-  margin-left: -10px;
-}
-
-.vs {
-  font-size: 50px;
-  font-family: 'Bungee Inline', cursive;
-  margin: 0 auto;
-  padding-top: 50px;
 }
 
 .submit {
@@ -184,6 +190,13 @@ img {
   border: 1px solid blue;
   font-size: 15px;
   margin: 0 auto;
+}
+
+.vs {
+  font-size: 50px;
+  font-family: 'Bungee Inline', cursive;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
 button {
@@ -194,22 +207,11 @@ button {
   margin-top: 30px;
 }
 
-/* pulse animation for modal textboxes */
-@keyframes modal-pulse {
-  0% {
-    box-shadow: 0 0 0 0px rgba(0,0,0,0.2);
-  }
-  100% {
-    margin-top: 10px;
-    box-shadow: 0 0 0 35px rgba(0,0,0,0);
-    transform: scale(1.1);
-  }
-}
-
 .stat {
   font-weight: bold;
 }
 
+/* Gif Carousel */
 .carousel-container {
   width: 80%;
   display: flex;
@@ -249,6 +251,8 @@ button {
   color: white;
 }
 
+/* CSS styling for bottom container */
+
 #bottom {
   height: 500px;
   display: flex;
@@ -281,7 +285,19 @@ button {
   color: white;
 }
 
+/* Adding Media query for iphones */
 @media (max-width: 1000px) {
+  /* CSS styling for top container */
+  #logo {
+    height: 300px;
+  }
+
+  #title {
+    font-size: 45px;
+    left: 7%;
+    top: 5%;
+  }
+
   #openAbout {
     top: 1%;
     right: 10%;
@@ -310,26 +326,17 @@ button {
     right: 5%;
   }
 
-  input {
-    font-size: 20px;
-    width: 250px;
-  }
-
-  #logo {
-    height: 300px;
-  }
-
-  #title {
-    font-size: 45px;
-    left: 7%;
-    top: 5%;
-  }
-
+  /* CSS styling for middle container */
   #middle {
     display: flex;
     flex-direction: column;
     width: 109%;
     margin: 0 auto;
+  }
+
+  input {
+    font-size: 20px;
+    width: 250px;
   }
 
   #vs {
@@ -338,6 +345,7 @@ button {
     padding-bottom: 30px;
   }
 
+  /* CSS styling for bottom container */
   #bottom {
     padding-left: 100px;
     margin: 0 auto;
@@ -345,8 +353,8 @@ button {
   }
 }
 
-/* Adding Media query for iphones */
 @media only screen and (max-width: 480px) {
+  /* CSS styling for top container */
   #openAbout {
     top: 1%;
     right: 5%;
@@ -381,6 +389,13 @@ button {
     height: 300px;
   }
 
+  #title {
+    font-size: 25px;
+    top: 15%;
+    left: 4%;
+  }
+
+  /* CSS styling for middle container */
   #middle {
     display: flex;
     flex-direction: column;
@@ -428,21 +443,16 @@ button {
     padding-left: 15px;
   }
 
-  #credit {
-    font-size: 13px;
-    padding-left: 10px;
-    margin-left: -10px;
-  }
-
+  /* CSS styling for bottom container */
   #bottom {
     margin-bottom: 200px;
     padding-bottom: 0px;
     height: 300px;
   }
 
-  #title {
-    font-size: 25px;
-    top: 15%;
-    left: 4%;
+  #credit {
+    font-size: 13px;
+    padding-left: 10px;
+    margin-left: -10px;
   }
 }
