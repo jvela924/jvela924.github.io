@@ -281,7 +281,7 @@ button {
   color: white;
 }
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   #openAbout {
     top: 1%;
     right: 10%;
