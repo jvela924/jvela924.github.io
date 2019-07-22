@@ -281,33 +281,38 @@ button {
   color: white;
 }
 
-@media only screen and (max-width: 1000px) and (min-width:500px) {
+@media only screen and (max-width: 1000px) {
   #openAbout {
     top: 1%;
     right: 10%;
   }
 
   #openInstructions {
-    top: 20%;
+    top: 10%;
     right: 11%;
   }
 
   #modalTextboxAbout {
-    width: 200px;
+    width: 220px;
     height: 75px;
     font-size: 12px;
     padding: 5px;
-    top: 9%;
+    top: 4.5%;
     right: 5%;
   }
 
   #modalTextboxInstructions {
-    width: 200px;
-    height: 85px;
+    width: 220px;
+    height: 70px;
     font-size: 12px;
     padding: 5px;
-    top: 28%;
+    top: 13.5%;
     right: 5%;
+  }
+
+  input {
+    font-size: 20px;
+    width: 250px;
   }
 
   #logo {
@@ -317,12 +322,14 @@ button {
   #title {
     font-size: 45px;
     left: 7%;
-    top: 10%;
+    top: 5%;
   }
 
   #middle {
     display: flex;
     flex-direction: column;
+    width: 109%;
+    margin: 0 auto;
   }
 
   #vs {
@@ -330,10 +337,16 @@ button {
     margin: 0 auto;
     padding-bottom: 30px;
   }
+
+  #bottom {
+    padding-left: 100px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
 }
 
 /* Adding Media query for iphones */
-@media only screen and (max-width: 480px) and (min-width: 0) {
+@media only screen and (max-width: 480px) {
   #openAbout {
     top: 1%;
     right: 5%;
