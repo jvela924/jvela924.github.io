@@ -1,6 +1,7 @@
 # Settle The Score
 ## What is Settle The Score
 ### Use Settle The Score to retrieve season averages for your favorite NBA players and debate amongst your friends who's the better player. The app is built using HTML, CSS, JS, and JQuery:
+## Technology Used
 #### HTML
 HTML is the standard langauge for creating web pages. It defines the structure of a web page.
 #### CSS
