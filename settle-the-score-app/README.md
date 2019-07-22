@@ -13,5 +13,5 @@ JQuery is a JS library that makes running JS on your web page easier. You can us
 #### Wireframe
 Once I fleshed out the concept, I started to think about what I want my site to look like. I created a wireframe using [wireframe.cc](https://wireframe.cc)
 
-![Wireframe](/images/screenshot.png)
+![Wireframe](https://github.com/jvela924/jvela924.github.io/blob/master/settle-the-score-app/images/screenshot.png)
 
