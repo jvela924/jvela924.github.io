@@ -4,7 +4,8 @@ I’m a Front-end web developer with a passion for showcasing a brand’s person
 
 ### Projects
 #### Settle The Score
-[Settle The Score](https://jvela924.github.io/settle-the-score-app/)
 Settle The Score is a web app that allows the user to compare season averages for two NBA players of their choosing. The app was built using HTML, CSS, JavaScript, and JQeury, and it is designed for desktop and mobile devices.
+##### Site Link
+[Settle The Score](https://jvela924.github.io/settle-the-score-app/)
 
 
