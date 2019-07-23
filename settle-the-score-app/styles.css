@@ -1,8 +1,6 @@
-/* CSS for top container */
 #top {
   margin: 0 auto;
   margin-bottom: 10px;
-  width: 100%;
 }
 
 .modal {
@@ -91,11 +89,10 @@
 }
 
 #logo {
-  width: 110%;
+  width: 100%;
   height: 200px;
   position: relative;
   display: block;
-  margin-left: -10px;
 }
 
 /* pulse animation for modal textboxes */
@@ -118,7 +115,6 @@
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #F4F5F5;
-  width: 100%;
   border-radius: 15px;
   border: 1px solid teal;
 }
@@ -268,7 +264,7 @@ button {
 }
 
 #credit {
-  width: 110%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: black;
@@ -290,6 +286,7 @@ button {
   /* CSS styling for top container */
   #logo {
     height: 300px;
+    width: 110%;
   }
 
   #title {
@@ -330,7 +327,7 @@ button {
   #middle {
     display: flex;
     flex-direction: column;
-    width: 109%;
+    width: 106%;
     margin: 0 auto;
   }
 
@@ -350,6 +347,10 @@ button {
     padding-left: 100px;
     margin: 0 auto;
     padding-bottom: 30px;
+  }
+
+  #credit {
+    width: 110%;
   }
 }
 
