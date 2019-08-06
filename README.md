@@ -8,4 +8,10 @@ Settle The Score is a web app that allows the user to compare season averages fo
 ##### Site Link
 [Settle The Score](https://jvela924.github.io/settle-the-score-app/)
 
+#### Fantasy manager
+Fantasy Manager is an express app where users can enter and edit their fantasy sports teams across all sports and platforms. The app was built using Node.js, Mongoose and MongoDB, Express, EJS, and Bootstrap. The app is hosted on Heroku.
+
+#### Site Link
+[Fantasy Manager](https://fantasy-manager.herokuapp.com/)
+
 
