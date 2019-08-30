@@ -14,4 +14,13 @@ Fantasy Manager is an express app where users can enter and edit their fantasy s
 #### Site Link
 [Fantasy Manager](https://fantasy-manager.herokuapp.com/)
 
+#### Disqover
+Disqover is a social networking and mosuci/movie disqovery application, built in Node.js, Express, Angular, and Mongoose, and it is hosted on Heroku.
+
+#### Site Link
+[Disqover](https://disqoverapplication.herokuapp.com)
+
+
+
+
 
