@@ -1,6 +1,6 @@
 # Project Portfolio
 ### Who am I?
-I’m a Front-end web developer with a passion for showcasing a brand’s personality and products in elegant websites using simple, clean code. Having previously worked on projects with developers, QA, tech support, and end-users, I’m passionate about collaboration and knowledge sharing, and I aim to motivate disparate teams towards a shared goal. Naturally a troubleshooter and motivated to learn and utilize new technology, my goal is to concisely share what I learn with my colleagues and become a reliable knowledge base. When tasked with seemingly overwhelming projects, I employ a level-headed approach, while setting and communicating realistic deadlines. 
+I’m a Full Stack Software Engineer with a passion for showcasing a brand’s personality and products in elegant websites using simple, clean code. Having previously worked on projects with developers, QA, tech support, and end-users, I’m passionate about collaboration and knowledge sharing, and I aim to motivate disparate teams towards a shared goal. Naturally a troubleshooter and motivated to learn and utilize new technology, my goal is to concisely share what I learn with my colleagues and become a reliable knowledge base. When tasked with seemingly overwhelming projects, I employ a level-headed approach, while setting and communicating realistic deadlines. 
 
 ### Projects
 #### Settle The Score
