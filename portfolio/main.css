@@ -80,9 +80,14 @@ li {
   width: 75%;
   margin-top: 100px;
 }
-
-h2, h3 {
+h2 {
   font-family: 'Lato', sans-serif;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
 }
 
 .social {
@@ -123,4 +128,32 @@ h2, h3 {
 
 #about-me {
   display: none;
+}
+
+#portfolio-div {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.project-pic {
+  width: 50%;
+  height: 300px;
+  border: 2px solid black;
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+hr {
+  margin-top: 40px;
+  width: 50%;
+  height: 2px;
+  border: none;
+  color:#333;
+  background-color:#333;
 }

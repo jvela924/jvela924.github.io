@@ -20,3 +20,4 @@ const showAboutMe = () => {
 
 $('#about').on('click', showAboutMe)
 $('#home').on('click', hideAboutMe)
+$('#about-button').on('click', showAboutMe);
