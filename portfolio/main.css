@@ -70,7 +70,7 @@ li {
   margin-left: 15%;
 }
 
-#home, #about, #portfolio, #resume:hover {
+#home, #about, #projects, #resume:hover {
   cursor: pointer;
 }
 
@@ -78,7 +78,7 @@ li {
   margin: 0 auto;
   text-align: center;
   width: 75%;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 h2 {
   font-family: 'Lato', sans-serif;
@@ -130,9 +130,10 @@ h3 {
   display: none;
 }
 
-#portfolio-div {
-  margin-top: 100px;
+#projects-div {
+  margin-top: 80px;
   text-align: center;
+  display: none;
 }
 
 .project-pic {
