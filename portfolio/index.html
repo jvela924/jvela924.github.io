@@ -5,6 +5,8 @@
     <title>Jeremy Vela</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
@@ -14,20 +16,42 @@
         </div>
         <div class="header">
           <li id="home">Home</li>
-          <li id="about">About Me</li>
+          <li id="about">About Me/Contacts</li>
           <li id="portfolio">Portfolio</li>
           <li id="resume">Resume</li>
         </div>
       </div>
     </header>
-    <div class="main">
+    <div id="main" class="main">
       <div>
         <img class='pro-pic' src="https://media.licdn.com/dms/image/C5603AQF-IZYtzURx-w/profile-displayphoto-shrink_200_200/0?e=1574294400&v=beta&t=QS19R0qQvQsGWKXXPy7B4HW-2sJPUBmwqVHh74cmskg" alt="profile picture">
       </div>
       <div>
-        <h2>Jeremy Vela</h2>
-        <h3>Full-Stack Software Engineer</h3>
+        <h2 class="name-h2">Jeremy Vela</h2>
+        <h3 class="title">Full-Stack Software Engineer <br>based in Westchester, New York</h3>
+        <button id="about-button" class="button">Learn More About Me</button>
+        <br>
+        <button id="portfolio" class="button">See my Work</button>
       </div>
+    </div>
+    <div id="about-me">
+      <div>
+        <h2>About Me</h2>
+        <h3>
+          I’m a Full Stack/Front End Web Developer with a passion for showcasing a brand’s personality and products in elegant websites using simple, clean code. Having previously worked on projects with developers, QA, tech support, and end-users, I’m passionate about collaboration and knowledge sharing, and I aim to motivate disparate teams towards a shared goal. Naturally a troubleshooter and motivated to learn and utilize new technology, my goal is to concisely share what I learn with my colleagues and become a reliable knowledge base. When tasked with seemingly overwhelming projects, I employ a level-headed approach, while setting and communicating realistic deadlines.
+        </h3>
+      </div>
+      <div class="contacts">
+        <div class="social-links">
+          <h2>Find Me on</h2>
+          <a target="_blank" href="https://www.linkedin.com/in/jeremy-vela/"><img class="social" src="LI-In-Bug.png" alt="linkedin"></a>
+          <a target="_blank" href="https://github.com/jvela924?tab=repositories"><img class="social-github" src="GitHub-Mark-64px.png" alt="linkedin"></a>
+        </div>
+        <div class="contact-info">
+          <h2>Contacts</h2>
+          <p class="contact-info-p">(631) 807-1007</p>
+          <p class="contact-info-p"><a href="mailto:jvela924@gmail.com">jvela924@gmail.com</a></p>
+        </div>
     </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="app.js" charset="utf-8"></script>
