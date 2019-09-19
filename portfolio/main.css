@@ -170,6 +170,7 @@ hr {
   margin-top: 80px;
   text-align: center;
   width: 75%;
+  display: none;
 }
 
 .skills {
