@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Settle The Score</title>
+    <link href="https://fonts.googleapis.com/css?family=Arsenal|Bungee+Inline|Josefin+Sans|Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="top">
+      <img id="logo" src="https://wallpapertag.com/wallpaper/full/4/9/6/534335-vertical-nba-logo-wallpaper-1920x1200.jpg" alt="logo">
+      <div>
+        <h1 id="title">Settle The<br>Score</h1>
+      </div>
+      <div class="modal">
+        <div class="about">
+          <button id="openAbout">About the App</button>
+          <div id="modalTextboxAbout">
+            <p>Easily get season averages for your favorite NBA players and Settle the Score as you debate who is better.</p>
+            <div id="modal-footer">
+              <a id="closeAbout" href="#">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="instructions">
+          <button id="openInstructions">Instructions</button>
+          <div id="modalTextboxInstructions">
+            <p>Search for a player by their full name and enter the season (by start year) for which you want to see average stats.</p>
+            <div id="modal-footer">
+              <a id="closeInstructions" href="#">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="middle">
+      <div class="playerContainer">
+        <h1 id="player">Select the Player and Season</h1>
+        <form id="form1">
+        	<input id="player1" type="text" placeholder="Enter player's full name"/>
+          <input id="season1" type="text" placeholder="Enter the season"/>
+          <input class="submit" type="submit">
+        </form>
+        <h2 class="player1Name"></h2>
+        <h3 class="player1Team"></h3>
+        <h4>Statistics</h4>
+        <div id="leftStatsContainer">
+          <div class="row">
+            <p class="stat">GP</p>
+            <p class="player1Gp"></p>
+          </div>
+          <div class="row">
+            <p class="stat">PTS</p>
+            <p class="player1Pts"></p>
+          </div>
+          <div class="row">
+            <p class="stat">REB</p>
+            <p class="player1Reb"></p>
+          </div>
+          <div class="row">
+            <p class="stat">AST</p>
+            <p class="player1Ast"></p>
+          </div>
+          <div class="row">
+            <p class="stat">FG%</p>
+            <p class="player1Fg"></p>
+          </div>
+          <div class="row">
+            <p class="stat">3P%</p>
+            <p class="player13P"></p>
+          </div>
+          <div class="row">
+            <p class="stat">STL</p>
+            <p class="player1Stl"></p>
+          </div>
+          <div class="row">
+            <p class="stat">BLK</p>
+            <p class="player1Blk"></p>
+          </div>
+          <div class="row">
+            <p class="stat">TOV</p>
+            <p class="player1Tov"></p>
+          </div>
+        </div>
+      </div>
+      <div id="vs">
+        <button id="reset" type="button" name="button">Reset</button>
+        <h3 class="vs">VS</h3>
+      </div>
+      <div class="playerContainer">
+        <h1 id="player">Select the Player and Season</h1>
+        <form id="form2">
+        	<input id="player2" type="text" placeholder="Enter player's full name"/>
+          <input id="season2" type="text" placeholder="Enter the season"/>
+          <input class="submit" type="submit">
+        </form>
+        <h2 class="player2Name"></h2>
+        <h3 class="player2Team"></h3>
+        <h4>Statistics</h4>
+        <div id="rightStatsContainer">
+          <div class="row">
+            <p class="stat">GP</p>
+            <p class="player2Gp"></p>
+          </div>
+          <div class="row">
+            <p class="stat">PTS</p>
+            <p class="player2Pts"></p>
+          </div>
+          <div class="row">
+            <p class="stat">REB</p>
+            <p class="player2Reb"></p>
+          </div>
+          <div class="row">
+            <p class="stat">AST</p>
+            <p class="player2Ast"></p>
+          </div>
+          <div class="row">
+            <p class="stat">FG%</p>
+            <p class="player2Fg"></p>
+          </div>
+          <div class="row">
+            <p class="stat">3P%</p>
+            <p class="player23P"></p>
+          </div>
+          <div class="row">
+            <p class="stat">STL</p>
+            <p class="player2Stl"></p>
+          </div>
+          <div class="row">
+            <p class="stat">BLK</p>
+            <p class="player2Blk"></p>
+          </div>
+          <div class="row">
+            <p class="stat">TOV</p>
+            <p class="player2Tov"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="bottom">
+      <div id="bottomContainer"
+        <div id="carouselContainer">
+          <div class="carousel-button previous">
+            <img src="https://png.pngtree.com/svg/20170522/1c7db84d9c.svg" alt="previous">
+          </div>
+          <div class="carousel-gifs">
+            <img src="https://media1.giphy.com/media/26vUGuV1WxhbkEKZy/giphy.gif?cid=790b76115d33b59e726653334dcf0fb3&rid=giphy.gif" alt="Lebron Dunking">
+            <img src="https://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/warriors/images/67-court-12.gif" alt="Curry">
+            <img src="https://cdn.vox-cdn.com/thumbor/JW4WEuLx1Os3a62zoSv6fECHtsM=/0x0:480x340/1200x0/filters:focal(0x0:480x340):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/13176919/13_Barnes_and_Kobe.jpg" alt="Kobe">
+            <img src="https://media1.giphy.com/media/ZB2v3SybociXTe03Dk/giphy.gif" alt="Embiid">
+            <img src="https://media1.giphy.com/media/l41lXGxBwXYFcJoJ2/giphy.gif" alt="Harden">
+          </div>
+          <div class="carousel-button next">
+            <img src="https://png.pngtree.com/svg/20170802/912f66f29c.svg" alt="next">
+          </div>
+        </div>
+      </div>
+      <div id="credit">
+        <div>
+          <p>Credits: Stats -
+            <a class='creditLink' href="https://www.balldontlie.io/#introduction" target="blank">balldontlie API</a>
+              Logos -
+                <a class="creditLink" href="http://www.sportslogos.net/teams/list_by_league/6/National_Basketball_Association/NBA/logos/" target="blank">SPORTSLOGOS.net</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
