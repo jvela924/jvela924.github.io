@@ -4,8 +4,6 @@ html {
 
 header {
   width: 100%;
-  margin-top: -10px;
-  margin-left: -10px;
 }
 
 .large-header {
@@ -16,7 +14,7 @@ header {
    background-size: cover;
    background-position: center center;
    z-index: 1;
-   height: 400px;
+   height: 100%;
 }
 
 .demo .large-header {
@@ -29,7 +27,7 @@ header {
    padding: 0;
    color: #F9F1E9;
    text-align: center;
-   top: 50%;
+   top: 30%;
    left: 50%;
    -webkit-transform: translate3d(-50%, -50%, 0);
    transform: translate3d(-50%, -50%, 0);
