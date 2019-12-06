@@ -2,26 +2,135 @@ html {
   background-color: whitesmoke;
 }
 
-header {
-  width: 100%;
-  margin-top: -10px;
-  margin-left: -10px;
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   z-index: 1;
+}
+
+.demo .large-header {
+   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title{
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 43%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.sub-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 55%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 80%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.down-arrow {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: white;
+   text-align: center;
+   top: 87%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+   height: 70px;
+   width: 70px;
+}
+
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 5.2em;
+   letter-spacing: 0.1em;
+}
+
+.demo .sub-title {
+   text-transform: uppercase;
+   font-size: 2.2em;
+   letter-spacing: 0.1em;
+}
+
+.demo .arrow-title {
+   text-transform: uppercase;
+   font-size: 1.5em;
+   letter-spacing: 0.1em;
+}
+
+.main-title .thin .sub-title {
+   font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+   }
+   .demo .sub-title {
+      font-size: 1em;
+   }
 }
 
 .header {
-  background-color: #47C7FE;
+  background-color: whitesmoke;
+  opacity: 1;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: white;
-  flex-wrap: wrap;
-  font-family: 'Josefin Sans', sans-serif;
-  padding-left: 25px;
+  height: 80px;
+  text-transform: uppercase;
 }
 
 .name {
   font-size: 30px;
+  color: black;
+  margin-left: 10px;
+}
+
+.about {
+  font-size: 50px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.projects {
+  font-size: 50px;
+  margin-bottom: 15px;
+  padding-top: 65px;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: 23px;
+  margin-top: 80px;
 }
 
 li {
@@ -34,9 +143,11 @@ li {
 }
 
 .pro-pic {
-  width: 275px;
-  height: 275px;
+  width: 350px;
+  height: 350px;
   border-radius: 10px;
+  margin-top: 30px;
+  margin-right: 40px;
 }
 
 .main {
@@ -63,11 +174,11 @@ li {
 
 .button {
   background-color: white;
-  color: #47C7FE;
+  color: white;
   width: 70%;
   border-radius: 5px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 50px;
   margin-left: 15%;
 }
 
@@ -79,8 +190,16 @@ li {
   margin: 0 auto;
   text-align: center;
   width: 75%;
-  margin-top: 80px;
+  margin-top: 100px;
+  padding-top: 75px;
 }
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
 h2 {
   font-family: 'Lato', sans-serif;
   font-size: 30px;
@@ -107,40 +226,181 @@ h3 {
 
 .social-links {
   align-items: center;
-  border-right: 2px solid #47C7FE;
-  padding-right: 90px;
 }
 
 .contacts {
-  margin-top: 50px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  background-color: #1B1B1B;
+  color: white;
 }
 
 .contact-info {
   padding-left: 70px;
+  color: white;
 }
 
 .contact-info-p {
-  font-size: 20px;
-  margin-bottom: -5px;
-}
-
-#about-me {
-  display: none;
+  font-size: 25px;
+  color: white;
 }
 
 #projects-div {
-  margin-top: 80px;
+  margin: 0 auto;
+  margin-top: 150px;
   text-align: center;
-  display: none;
+  background: white;
+  margin-bottom: 50px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 80px;
+}
+
+#project-div1 {
+  position: relative;
+  margin-right: 20px;
+}
+
+#project-div2 {
+  position: relative;
+  margin-right: 20px;
+}
+
+#project-div3 {
+  position: relative;
+  margin-right: 20px;
+}
+
+#project-div4 {
+  position: relative;
+  margin-right: 20px;
+}
+
+#project-div5 {
+  position: relative;
+  margin-right: 20px;
 }
 
 .project-pic {
-  width: 50%;
-  height: 300px;
-  border: 2px solid black;
+  width: 500px;
+  height: 500px;
+  border: .5px solid black;
+  margin-top: 20px;
+  display: block;
+}
+
+.project-pic:hover {
+  opacity: 0.1;
+}
+
+.project-title1 {
+  position: absolute;
+  top: 30%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f1;
+  width: 92%;
+  transition: .5s ease;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.project-title2 {
+  position: absolute;
+  top: 30%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f1;
+  width: 92%;
+  transition: .5s ease;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.project-title3 {
+  position: absolute;
+  top: 30%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f1;
+  width: 92%;
+  transition: .5s ease;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.project-title4 {
+  position: absolute;
+  top: 30%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f1;
+  width: 92%;
+  transition: .5s ease;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.project-title5 {
+  position: absolute;
+  top: 30%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f1;
+  width: 92%;
+  transition: .5s ease;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.skills-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.skill-logo {
+  width: 140px;
+  height: 140px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.skill-logo:hover {
+  transform: scale(1.5);
 }
 
 h4 {
@@ -154,11 +414,10 @@ h4 {
 
 hr {
   margin: 0 auto;
-  margin-top: 40px;
-  width: 50%;
+  width: 8%;
   height: 3px;
   border: 0;
-  border-top: 2px solid #47C7FE;
+  border-top: 2px solid black
 }
 
 .small-hr {
@@ -168,10 +427,9 @@ hr {
 
 #resume-div {
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 50px;
   text-align: center;
   width: 75%;
-  display: none;
 }
 
 .skills {
@@ -186,25 +444,6 @@ ul {
   padding-inline-start: 0;
 }
 
-.education-experience {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 60px;
-}
-
-.education {
-  border-right: 2px solid #47C7FE;
-  padding-right: 70px;
-  width: 50%;
-}
-
-.experience {
-  padding-left: 70px;
-  width: 50%;
-}
-
 .resume-h4 {
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -212,16 +451,33 @@ ul {
   margin-top: 10px;
 }
 
-a {
-  text-decoration: none;
-  color: #47C7FE;
-}
-
 .view-resume {
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 100px;
   padding: 15px;
   border-radius: 5px;
   font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: green
+}
+
+.resume-link:hover {
+  transform: scale(2);
+}
+
+.linked-in {
+  width: 50px;
+  height: 50px;
+  margin-left: 35px;
+}
+
+.github {
+  background-color: lightgray;
+  width: 50px;
+  height: 50px;
+}
+
+.mail-link {
+  color: green;
   text-decoration: none;
 }

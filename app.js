@@ -1,59 +1,47 @@
-const hideMain = () => {
-  $('#main').css('display', 'none')
-}
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
 
-const showMain = () => {
-  $('#main').css('display', 'flex')
-}
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
 
-const hideAboutMe = () => {
-  $('#about-me').css('display', 'none')
-}
+$("#project-div1").mouseenter(function(){
+  $('.project-title1').css("opacity", 1);
+})
 
-const showAboutMe = () => {
-  $('#about-me').css('display', 'block')
-}
+$("#project-div2").mouseenter(function(){
+  $('.project-title2').css("opacity", 1);
+})
 
-const showProjects = () => {
-  $('#projects-div').css('display', 'block')
-}
+$("#project-div3").mouseenter(function(){
+  $('.project-title3').css("opacity", 1);
+})
 
-const hideProjects = () => {
-  $('#projects-div').css('display', 'none')
-}
+$("#project-div4").mouseenter(function(){
+  $('.project-title4').css("opacity", 1);
+})
 
-const hideResume = () => {
-  $('#resume-div').css('display', 'none')
-}
+$("#project-div5").mouseenter(function(){
+  $('.project-title5').css("opacity", 1);
+})
 
-const showResume = () => {
-  $('#resume-div').css('display', 'block')
-}
+$("#project-div1").mouseleave(function(){
+  $('.project-title1').css("opacity", 0);
+})
 
-$('#about').on('click', hideMain);
-$('#about').on('click', hideProjects)
-$('#about-button').on('click', hideMain)
-$('#about-button').on('click', hideProjects)
-$('#home').on('click', showMain)
-$('#home').on('click', hideResume)
-$('#home').on('click', hideProjects)
+$("#project-div2").mouseleave(function(){
+  $('.project-title2').css("opacity", 0);
+})
 
-$('#about').on('click', showAboutMe)
-$('#about').on('click', hideResume)
-$('#home').on('click', hideAboutMe)
-$('#about-button').on('click', showAboutMe)
-$('#about-button').on('click', hideResume)
+$("#project-div3").mouseleave(function(){
+  $('.project-title3').css("opacity", 0);
+})
 
-$('#projects').on('click', showProjects)
-$('#projects').on('click', hideResume)
-$('#projects').on('click', hideMain)
-$('#projects').on('click', hideAboutMe)
+$("#project-div4").mouseleave(function(){
+  $('.project-title4').css("opacity", 0);
+})
 
-$('#projects-button').on('click', showProjects)
-$('#projects-button').on('click', hideMain)
-$('#projects-button').on('click', hideResume)
-
-$('#resume').on('click', showResume)
-$('#resume').on('click', hideProjects)
-$('#resume').on('click', hideMain)
-$('#resume').on('click', hideAboutMe)
+$("#project-div5").mouseleave(function(){
+  $('.project-title5').css("opacity", 0);
+})
